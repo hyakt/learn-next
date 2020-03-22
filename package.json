@@ -1,5 +1,31 @@
 {
+  "name": "try-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyakt/try-next.git"
+  },
+  "author": "hyakt <hyakt0@gmail.com>",
+  "license": "MIT",
+  "description": "nextやってくぞという気持ち",
+  "bugs": {
+    "url": "https://github.com/hyakt/try-next/issues"
+  },
+  "homepage": "https://github.com/hyakt/try-next#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
   "dependencies": {
-    "next": "^9.2.2"
+    "next": "^9.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   }
 }
