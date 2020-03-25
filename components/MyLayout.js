@@ -15,4 +15,4 @@ const withLayout = Page => {
   );
 }
 
-export default Layout;
+export default withLayout;
