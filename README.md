@@ -1,2 +1,2 @@
 # try-next
-nextやってくぞという気持ち
+https://nextjs.org/learn/basics/getting-started
