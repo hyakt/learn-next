@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import Header from './Header';
 
 const layoutStyle = {
@@ -7,12 +8,18 @@ const layoutStyle = {
 };
 
 const withLayout = Page => {
-  return () => (
-    <div style={layoutStyle}>
-      <Header />
-      <Page />
-    </div>
-  );
+  const Layout = (props) => {
+    return (
+        <div style={layoutStyle}>
+        <Header />
+        <Page {...props} />
+        </div>
+    );
+  }
+  if (Page.getInitialProps) {
+    Layout.getInitialProps = Page.getInitialProps
+  }
+  return Layout
 }
 
 export default withLayout;
