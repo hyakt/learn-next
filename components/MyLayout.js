@@ -23,3 +23,12 @@ const withLayout = Page => {
 }
 
 export default withLayout;
+
+export const Layout = ({children}) => {
+  return (
+      <div style={layoutStyle}>
+      <Header />
+      {children}
+      </div>
+  )
+}
